@@ -39,6 +39,8 @@ jobs:
           images: ${{ secrets.DOCKER_HUB_USERNAME }}/debian10_dev_basic
           tags: |
             type=raw,value={{date 'YYYY.MM.DD'}}
+            type=raw,value=latest
+            
 
 
       
