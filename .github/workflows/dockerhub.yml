@@ -48,9 +48,8 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: 
-            - ${{ secrets.DOCKER_HUB_USERNAME }}/debian10_dev_basic:latest
-            - ${{ secrets.DOCKER_HUB_USERNAME }}/debian10_dev_basic:2023.07.21
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/debian10_dev_basic:latest, 
+                ${{ secrets.DOCKER_HUB_USERNAME }}/debian10_dev_basic:2023.07.21
       
       - name: Image digest
         run: |
