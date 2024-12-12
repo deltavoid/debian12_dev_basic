@@ -1,7 +1,7 @@
 FROM debian:12.8
 
 
-# ADD sources.list /etc/apt/sources.list
+ADD sources.list /etc/apt/sources.list
 
 
 RUN apt-get update && apt-get install -y \
