@@ -1,4 +1,4 @@
-FROM debian:12
+FROM debian:12.8
 
 
 # ADD sources.list /etc/apt/sources.list
